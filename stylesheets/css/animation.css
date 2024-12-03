@@ -1,12 +1,11 @@
 .zabor {
   width: 1500px;
   height: 740px;
-  background-image: url(images/zabor.svg);
+  background-image: url("images/zabor.svg");
   margin: -8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
   animation: run 85s infinite steps(5000);
 }
 @keyframes run {
