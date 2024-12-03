@@ -1,7 +1,7 @@
 .zabor {
   width: 1500px;
   height: 740px;
-  background-image: url("images/zabor.svg");
+  background-image: url(../../images/zabor.svg);
   margin: -8px;
   display: flex;
   justify-content: center;
