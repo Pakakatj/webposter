@@ -2,11 +2,14 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("../images/moun.svg");
+  /*  */
+}
+header {
+  background-image: url("../images/bg-header.svg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  background-color: #fefae0;
+  width: 100%;
+  height: 118.3vw;
 }
 .c1 {
   width: 55vw;
@@ -57,4 +60,15 @@ body {
   width: 8vw;
   margin-right: 89vw;
   margin-top: 7vw;
+}
+.trees {
+  background-color: #fefae0;
+  width: 100%;
+}
+.tree {
+  width: 100%;
+  background-image: url("../images/tree1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 244vw;
 }
