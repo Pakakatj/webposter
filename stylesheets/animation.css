@@ -92,6 +92,7 @@
 }
 .tree:hover {
   background-image: url("../images/tree2.svg");
+  transition: all 2s ease-out;
 }
 
 .tree2 {
@@ -105,16 +106,64 @@
     animation: fade 8s infinite;
   }
 
-  .tree2:nth-child(2) {
-  animation: fade 8s infinite 4s; 
+.apple1 {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  transition: transform 0.5s ease;
 }
-*/ @keyframes fade {
-  0%,
-  25% {
-    opacity: 1;
-  }
-  30%,
-  100% {
-    opacity: 0;
-  }
+.apple1:hover {
+  transform: scale(0.6);
 }
+ .container {
+position: relative;
+            width: 100%;
+            height: 100%; 
+            overflow: hidden;
+        }
+        .clothes {
+          position: absolute;
+            width: 100%; 
+            height: auto;
+            animation: moveRight2 2s linear infinite; 
+        }
+        @keyframes moveRight2 {
+          0% {
+    transform: translateX(0%);
+}
+100% {
+ transform: translateX(-100%);
+} } 
+     body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; 
+            margin: 0;
+        }
+        .windows {
+            position: relative;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden; 
+        }
+        .windows img {
+            position: absolute;
+            width: 100%; 
+            height: auto; 
+            animation: fade 6s infinite; 
+        }
+        .windows img:nth-child(2) {
+            animation-delay: 3s; 
+        
+        }
+            @keyframes fade {
+            0%, 100% {
+                opacity: 0; 
+            }
+            10%, 90% {
+                opacity: 1; 
+            }
+        }

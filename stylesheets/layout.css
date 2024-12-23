@@ -71,4 +71,14 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   height: 244vw;
+  transition: all 2s linear;
+}
+
+.apple1 {
+  width: 8vw;
+  margin-right: 89vw;
+  margin-top: 7vw;
+}
+body {
+  margin: 0;
 }
