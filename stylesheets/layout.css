@@ -5,7 +5,7 @@ body {
   background-color: #fefae0;
   position: relative;
 
-  /*  */
+  height: 100vw;
 }
 
 section {
@@ -179,45 +179,87 @@ header {
   width: 180.2vw;
 }
 .zabor {
+  z-index: 5;
   position: absolute;
   width: 200vw;
 }
 .zabor1 {
   position: relative;
   width: 100vw;
-  height: 60vw;
+  height: 150vw;
   top: -60vw;
   overflow: hidden;
 }
 .corzina1 {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vw;
   overflow: hidden;
 }
 .corzina {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
+  top: 70vw;
+  overflow: hidden;
 }
 .p1 {
+  width: 30vw;
+  height: auto;
   position: absolute;
-  z-index: 3;
-  top: 1vw;
-  left: 4vw;
-  width: 40vw;
+  z-index: 4;
+  left: 13vw;
 }
 .p1:hover {
   animation-play-state: paused;
 }
 .p2 {
+  width: 30vw;
+  height: auto;
   position: absolute;
   z-index: 4;
-  top: -20vw;
-  left: 4vw;
-  width: 40vw;
-  height: auto;
+  left: 27vw;
 }
 .p2:hover {
+  animation-play-state: paused;
+}
+.p3 {
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  z-index: 4;
+  left: 14vw;
+}
+.p3:hover {
+  animation-play-state: paused;
+}
+.p4 {
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  z-index: 4;
+  left: 37vw;
+}
+.p4:hover {
+  animation-play-state: paused;
+}
+.p5 {
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  z-index: 4;
+  left: 47vw;
+}
+.p5:hover {
+  animation-play-state: paused;
+}
+.p6 {
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  z-index: 4;
+  left: 50vw;
+}
+.p6:hover {
   animation-play-state: paused;
 }
