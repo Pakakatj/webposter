@@ -2,14 +2,25 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #fefae0;
+  position: relative;
+
   /*  */
 }
+
+section {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
 header {
   background-image: url("../images/bg-header.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 118.3vw;
+  width: 100vw;
+  height: 125vw;
+  overflow: hidden;
 }
 .c1 {
   width: 55vw;
@@ -62,23 +73,151 @@ header {
   margin-top: 7vw;
 }
 .trees {
-  background-color: #fefae0;
   width: 100%;
 }
 .tree {
   width: 100%;
-  background-image: url("../images/tree1.svg");
+  background-image: url("../images/tree2.svg");
   background-size: contain;
   background-repeat: no-repeat;
   height: 244vw;
-  transition: all 2s linear;
+
+  position: relative;
+}
+.tree > img {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+}
+.text {
+  position: relative;
+  width: 100%;
+  top: 8vw;
+  overflow: hidden;
+}
+.apple1 {
+  left: 20vw;
+  top: 38vw;
+}
+.apple2 {
+  top: 69vw;
+  left: 20vw;
+}
+.apple3 {
+  top: 113vw;
+  left: 18vw;
+}
+.apple4 {
+  left: 78vw;
+  top: 59vw;
+  transform: rotate(30deg);
 }
 
-.apple1 {
-  width: 8vw;
-  margin-right: 89vw;
-  margin-top: 7vw;
+.apple6 {
+  top: 120vw;
+  left: 58vw;
 }
-body {
-  margin: 0;
+.apple7 {
+  top: 49vw;
+  left: 68vw;
+}
+.apple8 {
+  left: 85vw;
+  top: 150vw;
+}
+.apple9 {
+  top: 190vw;
+  left: 75vw;
+}
+.apple10 {
+  top: 148vw;
+  left: 38vw;
+}
+.apple11 {
+  top: 185vw;
+  left: 4vw;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  overflow: hidden;
+}
+.clothes {
+  position: absolute;
+  width: 180.2vw;
+  top: 8vw;
+  left: 0;
+}
+.windows {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  top: -60vw;
+}
+.windowsMobile {
+  display: none;
+  width: 90%;
+  height: 80vw;
+  background-image: url("../images/winclosemob.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fade 6s infinite steps(1);
+  margin: 0 auto;
+}
+.window {
+  width: 90%;
+  height: 80vw;
+  background-image: url("../images/vinclose.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fade 6s infinite steps(1);
+  margin: 0 auto;
+}
+.clothes {
+  position: absolute;
+  width: 180.2vw;
+}
+.zabor {
+  position: absolute;
+  width: 200vw;
+}
+.zabor1 {
+  position: relative;
+  width: 100vw;
+  height: 60vw;
+  top: -60vw;
+  overflow: hidden;
+}
+.corzina1 {
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  overflow: hidden;
+}
+.corzina {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+.p1 {
+  position: absolute;
+  z-index: 3;
+  top: 1vw;
+  left: 4vw;
+  width: 40vw;
+}
+.p1:hover {
+  animation-play-state: paused;
+}
+.p2 {
+  position: absolute;
+  z-index: 4;
+  top: -20vw;
+  left: 4vw;
+  width: 40vw;
+  height: auto;
+}
+.p2:hover {
+  animation-play-state: paused;
 }

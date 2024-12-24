@@ -1,42 +1,42 @@
 .c1 {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 34vw;
   transform: translateY(-50%);
   animation: moveRight 12s forwards;
 }
 .c2 {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 29vw;
   transform: translateY(-50%);
   animation: moveRight 12s forwards;
 }
 .c3 {
   position: absolute;
   left: -20vw;
-  top: 50%;
+  top: 28vw;
   transform: translateY(-50%);
   animation: moveRight 15s forwards;
 }
 .c4 {
   position: absolute;
   right: -10vw;
-  top: 50%;
+  top: 35vw;
   transform: translateY(-50%);
   animation: moveLeft 20s forwards;
 }
 .c5 {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 29vw;
   transform: translateY(-50%);
   animation: moveLeft 15s forwards;
 }
 .c6 {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 28vw;
   transform: translateY(-50%);
   animation: moveLeft 17s forwards;
 }
@@ -44,7 +44,7 @@
 .s1 {
   right: 0;
   position: absolute;
-  top: 50%;
+  top: 30vw;
   transform: translateY(-50%);
   height: auto;
   transition: transform 0.5s ease;
@@ -55,7 +55,7 @@
 .s2 {
   right: 0;
   position: absolute;
-  top: 50%;
+  top: 30vw;
   transform: translateY(-50%);
   height: auto;
   transition: transform 0.5s ease;
@@ -66,7 +66,7 @@
 .s3 {
   right: 0;
   position: absolute;
-  top: 50%;
+  top: 38vw;
   transform: translateY(-50%);
   height: auto;
   transition: transform 0.5s ease;
@@ -78,8 +78,11 @@
   0% {
     left: 0;
   }
-  100% {
+  99% {
     left: 100%;
+  }
+  100% {
+    display: none;
   }
 }
 @keyframes moveLeft {
@@ -90,80 +93,205 @@
     right: 100%;
   }
 }
-.tree:hover {
-  background-image: url("../images/tree2.svg");
-  transition: all 2s ease-out;
-}
-
 .tree2 {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: opacity 2s ease-in-out;
-
-  .tree1:nth-child(1) {
-    animation: fade 8s infinite;
-  }
-
-.apple1 {
-  right: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: auto;
-  transition: transform 0.5s ease;
 }
-.apple1:hover {
-  transform: scale(0.6);
+
+.clothes {
+  animation: moveRight2 2s linear infinite;
 }
- .container {
-position: relative;
-            width: 100%;
-            height: 100%; 
-            overflow: hidden;
-        }
-        .clothes {
-          position: absolute;
-            width: 100%; 
-            height: auto;
-            animation: moveRight2 2s linear infinite; 
-        }
-        @keyframes moveRight2 {
-          0% {
+
+@keyframes moveRight2 {
+  0% {
     transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-43%);
+  }
 }
-100% {
- transform: translateX(-100%);
-} } 
-     body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%; 
-            margin: 0;
-        }
-        .windows {
-            position: relative;
-            width: 100%; 
-            height: 100%; 
-            overflow: hidden; 
-        }
-        .windows img {
-            position: absolute;
-            width: 100%; 
-            height: auto; 
-            animation: fade 6s infinite; 
-        }
-        .windows img:nth-child(2) {
-            animation-delay: 3s; 
-        
-        }
-            @keyframes fade {
-            0%, 100% {
-                opacity: 0; 
-            }
-            10%, 90% {
-                opacity: 1; 
-            }
-        }
+.apple1 {
+  animation: apple1Fall 10s 1 ease;
+  animation-delay: 10s;
+}
+.apple2 {
+  animation: apple1Fall2 10s 1 ease;
+  animation-delay: 10s;
+}
+.apple3 {
+  animation: apple1Fall3 10s 1 ease;
+  animation-delay: 11s;
+}
+.apple4 {
+  animation: apple1Fall4 10s 1 ease;
+  animation-delay: 10s;
+}
+.apple6 {
+  animation: apple1Fall5 10s 1 ease;
+  animation-delay: 11s;
+}
+
+.apple7 {
+  animation: apple1Fall7 10s 1 ease;
+  animation-delay: 10s;
+}
+.apple8 {
+  animation: apple1Fall8 10s 1 ease;
+  animation-delay: 12s;
+}
+.apple9 {
+  animation: apple1Fall9 10s 1 ease;
+  animation-delay: 12s;
+}
+.apple10 {
+  animation: apple1Fall10 10s 1 ease;
+  animation-delay: 12s;
+}
+.apple11 {
+  animation: apple1Fall11 10s 1 ease;
+  animation-delay: 12s;
+}
+
+@keyframes apple1Fall {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall3 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall4 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall5 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall6 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall7 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall8 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall9 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall10 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+@keyframes apple1Fall11 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+.window:hover {
+  /* animation: fade 6s infinite steps(1); */
+  background-image: url("../images/vinopen.svg");
+}
+
+.zabor {
+  animation: moveRight2 5s linear infinite;
+}
+
+@keyframes moveRight3 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes potate1Fall1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
+.p1 {
+  animation: potateFall1 10s 1 ease;
+}
+.p2 {
+  animation: potateFall2 10s 1 ease;
+}
+@keyframes potate1Fall2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    top: 100%;
+    transform: rotate(450deg);
+  }
+}
